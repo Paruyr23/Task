@@ -1,0 +1,138 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {box-sizing: border-box;}
+
+.container-fluid {
+    width: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topnav a:hover {
+    background-color: #ff0036;
+}
+
+#carouselExampleControls{
+    background-color: #000;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h2 {
+    font-family: Raleway, serif;
+    font-size:50px;
+}
+
+.hero-text span{
+    color: #ff0036;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #ff0036;
+    color: white;
+}
+
+.nav-item{
+    margin-right: 60px;
+}
+
+.nav-item a:hover{
+    color: #fff;
+    border-top:3px solid #ff0036;
+    border-bottom:3px solid #ff0036;
+}
+
+nav{
+    box-sizing: border-box;
+}
+
+nav a{
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size:28px;
+}
+
+.sr-only{
+    color: #ff0036;
+}
+
+.carousel-item{
+    background-color: #000;
+    opacity: 0.7;
+}
+
+.head h2{
+    text-align: center;
+    margin: 70px 0 20px;
+    font-family: Raleway,serif;
+}
+
+.head h2 span{
+    color:#ff0036;
+}
+
+.head p{
+    text-align: center;
+    font-family: Lato,serif;
+    margin-bottom: 100px;
+}
+.head p span{
+    color:#ff0036;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+}
+.accordion .card-header.collapsed:before {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
+}
+
+.allAbout{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion{
+
+}
