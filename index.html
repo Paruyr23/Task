@@ -17,42 +17,31 @@
 </head>
 <body>
 <header class="container-fluid">
-    <nav class="navbar navbar-expand-sm bg-black fixed-top d-flex justify-content-around">
-        <div class="holder">
-            <div class='octagonWrap'>
-                <div class='octagon'>
-                    <div class="logo">
-                        <img id="logo" src="images/creativia.png" alt="logo">
+    <nav class="navbar fixed-top navbar-expand-xl navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">☰</button>
+        <div class="header">
+            <div class="holder">
+                <div class='octagonWrap'>
+                    <div class='octagon'>
+                        <div class="logo">
+                            <img id="logo" src="images/creativia.png" alt="logo">
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active"> <a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CLIENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="navbar-nav just">
-            <li class="nav-item">
-                <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CLIENTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">TEAM</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">SERVICES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-            </li>
-        </ul>
     </nav>
 </header>
 <main>
@@ -113,13 +102,13 @@
             <span class="sr-only">Next</span>
         </a>
     </section>
-    <section class="container-fluid about">
+    <section class="container-fluid .d-flex .flex-wrap about">
         <div class="head">
             <h2>about <span>creativia</span></h2>
             <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
         </div>
         <div class="allAbout">
-            <div class="container col-md-6">
+            <div class="container">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt.
@@ -161,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container col-md-6">
+            <div class="container d-flex flex-xl-wrap">
                 <div class="images d-flex">
                     <div class="half-left-hex"></div>
                     <div class="hexagon-img"></div>
@@ -213,7 +202,7 @@
     <section  class="container-fluid portfolio">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 ">
+                <div class="port">
                     <h6 class="section-title h1">portfolio</h6>
                     <nav>
                         <ul class="nav nav-tabs" role="tablist">
@@ -233,16 +222,70 @@
                     </nav>
                     <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                         <div class="tab-pane" id="nav-all" role="tabpanel">
-                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                            <div class="portfolioBLock1">
+                                <div class="">
+                                    <img src="images/Layer_7.png" alt="1">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_18.png" alt="2">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_9%20(1).png" alt="3">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_11.png" alt="4">
+                                </div>
+                            </div>
+                            <div class="portfolioBLock2">
+                                <div>
+                                    <img src="images/Layer_13.png" alt="5">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_17.png" alt="6">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_15.png" alt="7">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_16.png" alt="8">
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane show active" id="nav-illustration" role="tabpanel">
-
+                            <div>
+                                <div>
+                                    <img src="images/Layer_17.png" alt="6">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_15.png" alt="7">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_16.png" alt="8">
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane" id="nav-digital" role="tabpanel">
-                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                            <div>
+                                <div>
+                                    <img src="images/Layer_13.png" alt="5">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_9%20(1).png" alt="3">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_11.png" alt="4">
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane" id="nav-web" role="tabpanel">
-                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                            <div>
+                                <div class="">
+                                    <img src="images/Layer_7.png" alt="1">
+                                </div>
+                                <div>
+                                    <img src="images/Layer_18.png" alt="2">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
