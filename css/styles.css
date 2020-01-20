@@ -50,6 +50,10 @@ body, html {
     width: 90%;
 }
 
+.ml-auto{
+    margin-right: -210px;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -151,6 +155,10 @@ nav a{
     display: flex;
 }
 
+.tab-content{
+    margin-bottom: 90px;
+}
+
 .navbar-brand {
     font-size:28px;
 }
@@ -182,6 +190,11 @@ nav a{
 }
 .head p span{
     color:#ff0036;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .accordion .card-header:after {
@@ -227,7 +240,7 @@ color: white;
 }
 
 .about{
-    width: 70%;
+    width: 80%;
 }
 
 .header{
@@ -247,7 +260,7 @@ color: white;
 
 .center-text {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .hexagon {
@@ -359,10 +372,11 @@ color: white;
     width: 360px;
     height:320px;
     clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+    margin: -310px 0 0 100px;
 }
 
 .half-left-hex{
-    position: relative;
+    /*position: relative;*/
     background-image: url(../images/Layer_8.png);
     background-position: 12px -4px;
     width: 360px;
@@ -373,7 +387,7 @@ color: white;
 }
 
 .half-right-hex{
-    position: relative;
+    /*position: relative;*/
     background-image: url(../images/Layer_9.png);
     background-position: -52px -26px;
     width: 360px;
@@ -381,6 +395,7 @@ color: white;
     top: 11px;
     left: -242px;
     clip-path: polygon(64% 0%, 90% 50%, 64% 100%, 46% 100%, 69% 50%, 46% 0);
+    margin: -308px 0 0 220px;
 }
 
 .b-line{
@@ -396,7 +411,7 @@ color: white;
     height: 249px;
     position: absolute;
     top: -38px;
-    left: 10%;
+    left: 6%;
     -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
@@ -468,4 +483,186 @@ color: white;
 }
 h6{
     margin-top: 70px;
+}
+
+.port{
+    width: 100%;
+}
+
+.portblock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   width:25%;
+    height: 300px;
+}
+
+.portblock:hover{
+    opacity: 0.1;
+}
+
+.portblock:hover .hoverInfo{
+    display: block !important;
+    color: black;
+}
+
+.bcolor1{
+    background-color: #e69d54;
+}
+
+.bcolor2{
+    background-color: #4D81A7;
+}
+
+.bcolor3{
+    background-color: #DC6788;
+}
+
+.bcolor4{
+    background-color: #F5F0E2;
+}
+
+.bcolor5{
+    background-color: #79C989;
+}
+
+.bcolor6{
+    background-color: #98A5A5;
+}
+
+.bcolor7{
+    background-color: #58AEC6;
+}
+
+.bcolor8{
+    background-color: #EA8B6A;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ff0036 !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    color: #ff0036 !important;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.nav-link{
+    color:#A4A4A4;
+}
+
+.nav-illustration{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-digital{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-web{
+    display: flex;
+    justify-content: center;
+}
+
+.r-line{
+    width: 37%;
+    height: 2px;
+    background: #ff0036;
+    margin: 100px auto 100px;
+}
+
+.mini-r-hexagon{
+    position: relative;
+    width: 26px;
+    height: 15.01px;
+    background-color: #ff0036;
+    margin: auto;
+    transform: scaleY(1) rotate(-90deg);
+    top: -6px;
+}
+
+.mini-r-hexagon:before,
+.mini-r-hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+}
+
+.mini-r-hexagon:before {
+    bottom: 100%;
+    border-bottom: 7.51px solid #ff0036;
+}
+
+.mini-r-hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 7.51px solid #ff0036;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.d-block{
+    height: -webkit-fill-available;
+}
+
+.carousel-inner {
+    height: 1250px;
+}
+
+.hoverInfo{
+    font-size: x-large;
+    font-weight: bold;
+    display: none;
+}
+
+.images{
+    padding: 20px 4%;
+}
+
+.s-hex{
+    position: relative;
+    width: 26px;
+    height: 15.01px;
+    background-color: #E7E7E7;
+    margin: auto;
+    transform: scaleY(1) rotate(-90deg);
+    top: -6px;
+}
+
+.s-hex:before,
+.s-hex:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+}
+
+.s-hex:before {
+    bottom: 100%;
+    border-bottom: 7.51px solid #E7E7E7;
+}
+
+.s-hex:after {
+    top: 100%;
+    width: 0;
+    border-top: 7.51px solid #E7E7E7;
 }
