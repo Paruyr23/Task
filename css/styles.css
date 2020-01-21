@@ -6,7 +6,10 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html { overflow-x: hidden; }
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
 
 * {box-sizing: border-box !important;}
 
@@ -192,6 +195,7 @@ nav a{
 }
 
 .accordion .card-header:after {
+    font-family: 'FontAwesome';
     content: "\f068";
     float: left;
 }
@@ -886,6 +890,7 @@ h6{
 
 .client_header{
     position: relative;
+    margin-bottom: 40px;
 }
 
 /*.col-center {*/
@@ -1026,35 +1031,6 @@ h6{
     transform: translate(-50%, -50%);
     text-align: initial;
 }
-
-.hexagon-team {
-    width: 40px;
-    position: absolute;
-    height: 23.09px;
-    background-color: white;
-    margin: 11.55px 0;
-}
-
-.hexagon-team:before,
-.hexagon-team:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-}
-
-.hexagon-team:before {
-    bottom: 100%;
-    border-bottom: 11.55px solid white;
-}
-
-.hexagon-team:after {
-    top: 100%;
-    width: 0;
-    border-top: 11.55px solid white;
-}
-
 .text i {
     color: #ff0036;
     background: white;
@@ -1067,4 +1043,153 @@ h6{
 
 .text i{
     cursor: pointer;
+}
+
+.teamwork_hexagon {
+    background-color: white;
+    height: 35px;
+    width: 40px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    margin: 0 4px;
+}
+
+.progress {
+    width: 150px;
+    height: 150px;
+    background: none;
+    position: relative;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.small{
+    top: -3px;
+}
+
+.align{
+    text-align: center;
+}
+
+.align h5 {
+    margin-top:20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.our_services {
+    background-color: #272727;
+    padding-bottom: 50px;
+}
+
+.services_div {
+    padding: 15px 0;
+}
+
+.services_hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background: #a4a4a4;
+    height: 35px;
+    width: 40px;
+}
+
+.services_header {
+    color:white;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.services_div_text {
+    margin: 0px 80px 0 77px;
+    background-color: #343434;
+    padding: 15px 25px;
+    color: #989898;
+}
+
+.services_div:hover .head_services > .services_hexagon {
+    background-color: #ff0036;
+}
+
+.services_div:hover .head_services > .services_hexagon > .our-services-hex-icons {
+    color: white;
+}
+
+.services_div:hover .services_div_text {
+    background-color: #3b2329;
+    color: white;
+}
+
+.head_services h4 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: 2px 0 0 20px;
+}
+
+.head_services {
+    padding: 15px 80px;
+}
+
+.services_hexagon i{
+    font-size: x-large;
+    font-weight: bold;
+    margin: 3px 0 0px 6px;
 }
