@@ -221,6 +221,14 @@ nav a{
 color: white;
 }
 
+.navbar-collapse {
+    display: flex;
+}
+
+.show{
+    margin-top: 20px;
+}
+
 .accordion .card-header.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\f067";
@@ -585,8 +593,8 @@ h6{
 }
 
 .navbar-toggler{
-    background-color: white;
-    margin-left: 400px;
+    background-color: #9F9F9F;
+    margin-left: 85%;
 }
 
 .d-block{
@@ -658,11 +666,11 @@ h6{
     margin-top: 5px;
 }
 
-.hex_div:hover .col-xl-first-div > .product_p {
+.hex_div:hover .chek_div > .product_p {
     color: white;
 }
 
-.hex_div:hover > .col-xl-first-div > .products-div{
+.hex_div:hover > .chek_div > .products-div{
     color: red;
     background-color: white;
 }
@@ -671,8 +679,6 @@ h6{
     margin: 3px 12px 0 0;
     font-size: 19px;
 }
-
-
 
 .hex_div {
     border: 1px solid #E1E1E1;
@@ -788,19 +794,19 @@ h6{
 
 .clients{
     padding: 70px 14px;
-    background-image: url("../images/bg2.png");
+    background-image: url(../images/bg2.png);
     background-position: center;
-    background-size: 100% 115%;
+    background-size: 125% 115%;
     position: relative;
     width: auto;
-    height: 830px;
+    height: fit-content;
 }
 
 #our_clients .clients::before {
     content: '';
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
-    height: 830px;
+    height: 100%;
     width: 100%;
     top: 0;
     right: 0;
@@ -949,73 +955,31 @@ h6{
     margin: 0 4px;
 }
 
-.progress {
-    width: 150px;
-    height: 150px;
-    background: none;
+
+.circle {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: inline-block;
     position: relative;
+    text-align: center;
 }
 
-.progress::after {
-    content: "";
+.circle div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -86px;
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 6px solid #eee;
-    position: absolute;
-    top: 0;
-    left: 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 31px;
+
 }
 
-.progress>span {
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-}
-
-.progress .progress-left {
-    left: 0;
-}
-
-.progress .progress-bar {
-    width: 100%;
-    height: 100%;
-    background: none;
-    border-width: 6px;
-    border-style: solid;
-    position: absolute;
-    top: 0;
-}
-
-.progress .progress-left .progress-bar {
-    left: 100%;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    border-left: 0;
-    -webkit-transform-origin: center left;
-    transform-origin: center left;
-}
-
-.progress .progress-right {
-    right: 0;
-}
-
-.progress .progress-right .progress-bar {
-    left: -100%;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-right: 0;
-    -webkit-transform-origin: center right;
-    transform-origin: center right;
-}
-
-.progress .progress-value {
-    position: absolute;
-    top: 0;
-    left: 0;
+.main_div_progressbars{
+    display: flex;
 }
 
 .small{
@@ -1114,6 +1078,7 @@ h6{
     background-color: #262626;
     color: white;
     text-align: center;
+    margin-top: 40px;
 }
 
 .bestsellers_header h4 {
@@ -1242,7 +1207,8 @@ h6{
 }
 
 .card-img-top{
-    background-color: #78C786;
+    background-color: #56CA7F;
+    height: 90%;
 }
 
 #blog{
@@ -1316,6 +1282,7 @@ color: white;
 
 .hexagon_follows:hover{
     background-color: #ff0036 !important;
+    cursor: pointer;
 }
 
 .hexagon_follows:before,
@@ -1341,4 +1308,69 @@ color: white;
     border-bottom: solid 1px #ff0036;
     border-left: solid 1px #ff0036;
     color:white;
+}
+
+.message-info{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 94% 75%, 74% 100%, 83% 75%, 0% 75%);
+    background-color: #262626;
+    height: 300px;
+    width: 32%;
+    margin-right: 150px;
+    padding: 30px 0 0 20px;
+}
+
+.message-info p{
+    color:white;
+    font-size: 17px;
+}
+
+.form-content{
+    display: flex;
+    margin: -402px auto 0;
+}
+
+.send_button{
+    color: #fff;
+    float: right;
+    background-color: #262626;
+    border-radius: 0;
+    margin-top: 180px;
+    border-style: none;
+    padding: 10px 40px;
+}
+
+.form-content form {
+    position: relative;
+    background: white;
+    box-shadow: 0px 0px 1px 0.2px rgba(0,0,0,0.75);
+    padding: 50px 50px 0 50px;
+    height: 556px;
+    margin-top: -160px;
+    width: 42%;
+}
+
+.form-content form h2{
+    margin: 0 0 30px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer{
+    background-color: #262626;
+    color: white;
+    display: flex;
+    padding: 18px;
+}
+
+.footer_img{
+    text-align: end;
+    vertical-align: center;
+    opacity: 0.5;
+    margin-top: 5px;
+}
+
+.footer_p{
+    text-align: end;
+    opacity: 0.5;
+    font-size: 17px;
+    margin-top: 3px;
 }
