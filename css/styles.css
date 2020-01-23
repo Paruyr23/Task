@@ -165,7 +165,7 @@ nav a{
     color: #ff0036;
 }
 
-.carousel-item img{
+.inner1 .carousel-item img{
     background-color: #000;
     opacity: 0.4;
 }
@@ -290,6 +290,21 @@ color: white;
     border-right: solid 1px #ff0036;
 }
 
+
+
+.hexagon:hover {text-decoration: none} /* Optional (avoid undesired underscore if a is used as wrapper) */
+.hide {display:none}
+/* Do the shift: */
+.hexagon:hover img:first-child{display:none}
+.hexagon:hover img:last-child{display:inline-block}
+
+
+.hexagon:after:hover{
+    top: -38.8909px;
+    border-top: solid 1px #ff0036;
+    border-right: solid 1px #ff0036;
+}
+
 .hexagon:before,
 .hexagon:after {
     content: "";
@@ -321,14 +336,23 @@ color: white;
 }
 
 .fa-check-square{
-    font-size: 50px;
+    height: 52px;
+    width: 61%;
     transform: scaleY(0.9) rotate(90deg);
-    padding: 6px;
+    padding-left: 10px;
+}
+
+.hide{
+    height: 52px;
+    width: 61%;
+    transform: scaleY(0.9) rotate(90deg);
+    padding-left: 10px;
 }
 
 .fa-tablet{
-    font-size: 65px;
+    font-size: 61px;
     transform: scaleY(0.9) rotate(90deg);
+    margin: 1px 0 0 -3px;
 }
 
 .fa-fire{
@@ -337,6 +361,10 @@ color: white;
     padding: 6px;
 }
 
+.head-p{
+    color: #505050;
+    font-family: "Raleway",sans-serif;
+}
 
 .bg-black{
     background-color: #08080C;
@@ -344,6 +372,16 @@ color: white;
 
 .block {
     width: 18%;
+}
+
+.block h4{
+    font-weight: bold;
+    font-family: "Raleway",sans-serif;
+}
+
+.block p {
+    color: #505050;
+    font-family: "Raleway",sans-serif;
 }
 
 .mini-hexagon {
@@ -601,7 +639,7 @@ h6{
     height: -webkit-fill-available;
 }
 
-.carousel-inner {
+.inner1 {
     height: 1250px;
 }
 
@@ -649,8 +687,8 @@ h6{
     background-color: silver;
     height: 30px;
     width: 35px;
-    margin-top: 4px;
-    margin-right: 10px;
+    margin: 4px 10px;
+    text-align: center;
 }
 
 .font_style{
@@ -795,16 +833,17 @@ h6{
 .clients{
     padding: 70px 14px;
     background-image: url(../images/bg2.png);
-    background-position: center;
-    background-size: 125% 115%;
-    position: relative;
     width: auto;
     height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 #our_clients .clients::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -818,6 +857,28 @@ h6{
     color: #fff;
 }
 
+.video_hive_img{
+    margin: -4px 0 0 -4px !important;
+}
+
+.code_canyon_img{
+    margin: -1px 0 0 -1px !important;
+}
+
+.bg_under_img{
+    background-color: #2D2B2C;
+    border: 1px solid;
+    height: 27px;
+    width: 7%;
+    border-radius: 6px;
+    margin: auto 0 0;
+}
+
+.bg_under_img img{
+    overflow: hidden;
+    margin: 0 0 0 -12px;
+}
+
 #our_clients h3{
     color: #fff;
 }
@@ -828,8 +889,52 @@ h6{
     color: #a4a4a4;
 }
 
+#carouselExampleIndicators .mini_carousel{
+    width: 9%;
+    height: 60px;
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    margin: 10px auto;
+}
+#carouselExampleIndicators .carousel-item span{
+    color: #FF0036;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.carousel .carousel-indicators li {
+    background-color: #fff;
+}
+
+.carousel .carousel-indicators .active {
+    background-color: #ff0036;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    list-style-type: square;
+}
+
+.carousel-indicators {
+    top: 100px;
+}
+
+.carousel-indicators .active {
+    background-color: #ffff99;
+}
+
+.carousel{
+    top: -40px;
+}
+
 .clients_info{
-    margin-top: 130px;
+    margin-top: 50px;
+    font-family: "Raleway", sans-serif
 }
 
 .div_clients{
@@ -849,6 +954,7 @@ h6{
 }
 .img-span span{
     font-size: 22px;
+    margin: -3px 6px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -924,7 +1030,7 @@ h6{
 
 .text {
     color: white;
-    font-size: 20px;
+    font-size: 19px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -953,8 +1059,13 @@ h6{
     width: 40px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     margin: 0 4px;
+    text-align: center;
 }
 
+.teamwork_hexagon img{
+    margin-top: 6px;
+    cursor: pointer;
+}
 
 .circle {
     width: 180px;
@@ -970,12 +1081,23 @@ h6{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -20px 0 0 -86px;
+    margin: -20px 0 0 -100px;
     width: 100%;
     text-align: center;
     line-height: 40px;
     font-size: 31px;
+    color:#ff0036;
+}
 
+.circle span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -68px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 31px;
 }
 
 .main_div_progressbars{
@@ -1220,8 +1342,10 @@ h6{
     width: 100%;
     background-position-y: -145px;
     height: 800px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .follow_h3{
@@ -1269,6 +1393,21 @@ h6{
     margin: 10px;
     font-size: 40px;
 }
+
+.hexagon_follows img{
+    transform: rotate(90deg);
+    margin: 14px;
+    height: 40px;
+    width: 30%;
+}
+
+.hexagon_follows:hover {text-decoration: none} /* Optional (avoid undesired underscore if a is used as wrapper) */
+.hide2 {display:none}
+/* Do the shift: */
+.hexagon_follows:hover img:first-child{display:none}
+.hexagon_follows:hover img:last-child{display:inline-block}
+
+
 
 .hexagon_follows:before:hover{
     top: -38.8909px;

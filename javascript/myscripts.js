@@ -18,11 +18,32 @@ $(document).ready(function ($) {
                         color: '#ff0036'
                     }
                 }).on('circle-animation-progress', function (event, progress, stepValue) {
-                    $(this).find('div').text((stepValue*100).toFixed(0) + "%");
+                    $(this).find('div').text((stepValue*100).toFixed(0));
                 }).stop();
             }
         });
     }
     animateElements();
     $(window).scroll(animateElements);
+});
+
+
+$(".carousel").swipe({
+
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+
+    },
+    allowPageScroll:"vertical"
+
+});
+
+$('.my-carousel').carousel().swipeCarousel({
+
+});
+
+$('.my-carousel').carousel().swipeCarousel({
+    sensitivity:'high'
 });

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.1/dist/circle-progress.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <script src="dist/bootstrap-swipe-carousel.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="javascript/myscripts.js"></script>
 </head>
@@ -49,7 +50,7 @@
 </header>
 <main>
     <section id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner inner1">
             <div class="carousel-item active">
                 <img class="d-block w-100 img-fluid" src="images/bg.png" alt="First slide">
                 <div class="hero-text">
@@ -124,7 +125,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-12">
-                    <p>
+                    <p class="head-p">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt.
                         Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat.
@@ -206,7 +207,8 @@
                 </p>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 block">
-                <div class="hexagon"><i class="fa fa-check-square" aria-hidden="true"></i></div>
+                <div class="hexagon"><img src="images/check_mark.png" alt="check" class="fa-check-square">
+                    <img src="images/check_mark_white.png" alt="check" class="hide"></div>
                 <h4>RETINA READY</h4>
                 <p>
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -260,25 +262,25 @@
                     <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                         <div class="tab-pane  show active" id="nav-all" role="tabpanel">
                             <div class="portfolioBLock1 ">
-                                <div class="portblock bcolor1 ">
+                                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-2 portblock bcolor1 ">
                                     <img src="images/Layer_7.png" alt="1" class="img-fluid">
                                     <div class="overlay">
                                         <div class="text">+ web design</div>
                                     </div>
                                 </div>
-                                <div class="portblock bcolor2">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 portblock bcolor2">
                                     <img src="images/Layer_18.png" alt="2" class="img-fluid">
                                     <div class="overlay">
                                         <div class="text">+ web design</div>
                                     </div>
                                 </div>
-                                <div class="portblock bcolor3">
+                                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-2 portblock bcolor3">
                                     <img src="images/Layer_9%20(1).png" alt="3" class="img-fluid">
                                     <div class="overlay">
                                         <div class="text">+ digital art</div>
                                     </div>
                                 </div>
-                                <div class="portblock bcolor4">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 portblock bcolor4">
                                     <img src="images/Layer_11.png" alt="4" class="img-fluid">
                                     <div class="overlay">
                                         <div class="text">+ digital art</div>
@@ -286,25 +288,25 @@
                                 </div>
                             </div>
                             <div class="portfolioBLock2">
-                                <div class="portblock bcolor5">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 portblock bcolor5">
                                     <img src="images/Layer_13.png" alt="5" class="img-fluid">
                                     <div class="overlay">
                                         <div class="text">+ digital art</div>
                                     </div>
                                 </div>
-                                <div class="portblock bcolor6">
+                                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-2 portblock bcolor6">
                                     <img src="images/Layer_17.png" alt="6" class="img-fluid">
                                     <div class="overlay">
                                         <div class="text">+ illustration</div>
                                     </div>
                                 </div>
-                                <div class="portblock bcolor7">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 portblock bcolor7">
                                     <img src="images/Layer_15.png" alt="7" class="img-fluid">
                                     <div class="overlay">
                                         <div class="text">+ illustration</div>
                                     </div>
                                 </div>
-                                <div class="portblock bcolor8">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-2 portblock bcolor8">
                                     <img src="images/Layer_16.png" alt="8" class="img-fluid">
                                     <div class="overlay">
                                         <div class="text">+ illustration</div>
@@ -368,33 +370,33 @@
                 </p>
             </div>
             <div class="row our_product_features">
-                <div class="col-lg-6 col-md-12 col-xl-4 left_checks">
+                <div class="col-xl-4 col-lg-6 col-md-6 left_checks">
                     <div class="hex_div">
-                        <div class="d-flex justify-content-center align-items-center chek_div">
+                        <div class="d-flex justify-content-end align-items-center chek_div">
                             <p class="product_p">UNLIMITED COLOR OPTIONS</p>
-                            <div class="products-div d-flex justify-content-center">
+                            <div class="products-div">
                                 <i class="fa fa-check hexagons_check" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
                     <div class="hex_div">
-                        <div class="d-flex justify-content-center align-items-center chek_div">
-                            <p class="product_p">UNLIMITED COLOR OPTIONS</p>
-                            <div class="products-div d-flex justify-content-center">
+                        <div class="d-flex justify-content-end align-items-center chek_div">
+                            <p class="product_p">OUTSTANDING SUPPORT</p>
+                            <div class="products-div">
                                 <i class="fa fa-check hexagons_check" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
                     <div class="hex_div">
-                        <div class="d-flex justify-content-center align-items-center chek_div">
-                            <p class="product_p">UNLIMITED COLOR OPTIONS</p>
-                            <div class="products-div d-flex justify-content-center">
+                        <div class="d-flex  d-flex justify-content-end align-items-center chek_div">
+                            <p class="product_p">RETINA READY</p>
+                            <div class="products-div">
                                 <i class="fa fa-check hexagons_check" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-xl-4 product">
+                <div class="col-xl-4 col-lg-6 col-md-6 product">
                     <div class="product_img">
                         <img src="images/Replace_Me.png" class="img-response">
                     </div>
@@ -408,29 +410,29 @@
                         <div class="bottom_left"></div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-xl-4 right_checks">
+                <div class="col-xl-4 col-lg-6 col-md-6 right_checks">
                     <div class="hex_div">
-                        <div class="d-flex justify-content-center align-items-center chek_div">
-                            <div class="products-div d-flex justify-content-center">
+                        <div class="d-flex justify-content-start align-items-center chek_div">
+                            <div class="products-div">
                                 <i class="fa fa-check hexagons_check" aria-hidden="true"></i>
                             </div>
                             <p class="product_p">UNLIMITED COLOR OPTIONS</p>
                         </div>
                     </div>
                     <div class="hex_div">
-                        <div class="d-flex justify-content-center align-items-center chek_div">
-                            <div class="products-div d-flex justify-content-center">
+                        <div class="d-flex justify-content-start align-items-center chek_div">
+                            <div class="products-div">
                                 <i class="fa fa-check hexagons_check" aria-hidden="true"></i>
                             </div>
-                            <p class="product_p">UNLIMITED COLOR OPTIONS</p>
+                            <p class="product_p">OUTSTANDING SUPPORT</p>
                         </div>
                     </div>
                     <div class="hex_div">
-                        <div class="d-flex justify-content-center align-items-center chek_div">
-                            <div class="products-div d-flex justify-content-center">
+                        <div class="d-flex justify-content-start align-items-center chek_div">
+                            <div class="products-div">
                                 <i class="fa fa-check hexagons_check" aria-hidden="true"></i>
                             </div>
-                            <p class="product_p">UNLIMITED COLOR OPTIONS</p>
+                            <p class="product_p">RETINA READY</p>
                         </div>
                     </div>
                 </div>
@@ -456,13 +458,44 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit
                         dignissim luctus eu in urna. Dapibus egestas turpis.</p>
+
+                    <div class="container">
+                        <div id="carouselExampleIndicators" class="carousel slide my-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="mini_carousel">
+                                        <img class="d-block w-100" src="images/web.jpg" alt="First slide">
+                                    </div>
+                                    <span>BRUCE WAYNE</span>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="mini_carousel">
+                                        <img class="d-block w-100" src="images/car.png" alt="Second slide">
+                                    </div>
+                                    <span>AMR SROUR</span>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="mini_carousel">
+                                        <img class="d-block w-100" src="images/Layer_20.png" alt="Third slide">
+                                    </div>
+                                    <span>SARAH DOE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 clients_info">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 col-12 d-flex justify-content-center">
                             <div class="div_clients">
                                 <div class="img-span d-flex justify-content-center">
-                                    <div>
+                                    <div class="bg_under_img">
                                         <img src="images/Vector_Smart_Object_copy.png">
                                     </div>
                                     <span>graphicriver</span>
@@ -472,8 +505,8 @@
                         <div class="col-xl-6 col-md-6 col-12 d-flex justify-content-center">
                             <div class="div_clients">
                                 <div class="img-span d-flex justify-content-center">
-                                    <div>
-                                        <img src="images/Vector_Smart_Object_copy_2.png">
+                                    <div class="bg_under_img">
+                                        <img src="images/Vector_Smart_Object_copy_2.png" class="video_hive_img">
                                     </div>
                                     <span>videohive</span>
                                 </div>
@@ -484,8 +517,8 @@
                         <div class="col-xl-6 col-md-6 col-12 d-flex justify-content-center">
                             <div class="div_clients">
                                 <div class="img-span d-flex justify-content-center">
-                                    <div>
-                                        <img src="images/photodune.png">
+                                    <div class="bg_under_img">
+                                        <img src="images/photodune.png"  class="video_hive_img">
                                     </div>
                                     <span>photodune</span>
                                 </div>
@@ -494,8 +527,8 @@
                         <div class="col-xl-6 col-md-6 col-12 d-flex justify-content-center">
                             <div class="div_clients">
                                 <div class="img-span d-flex justify-content-center">
-                                    <div>
-                                        <img src="images/Vector_Smart_Object_copy_22.png">
+                                    <div class="bg_under_img">
+                                        <img src="images/Vector_Smart_Object_copy_22.png"  class="code_canyon_img">
                                     </div>
                                     <span>codecanyon</span>
                                 </div>
@@ -538,7 +571,7 @@
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </div>
                                     <div class="teamwork_hexagon">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                        <img src="images/g+_red.png" alt="g+">
                                     </div>
                                 </div>
                             </div>
@@ -564,7 +597,7 @@
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </div>
                                     <div class="teamwork_hexagon">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                        <img src="images/g+_red.png" alt="g+">
                                     </div>
                                 </div>
                             </div>
@@ -590,7 +623,7 @@
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </div>
                                     <div class="teamwork_hexagon">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                        <img src="images/g+_red.png" alt="g+">
                                     </div>
                                 </div>
                             </div>
@@ -616,7 +649,7 @@
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </div>
                                     <div class="teamwork_hexagon">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                        <img src="images/g+_red.png" alt="g+">
                                     </div>
                                 </div>
                             </div>
@@ -652,28 +685,28 @@
                 <div class="row pt-5 pb-5">
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 align progressbar" data-animate="false">
                         <div class="circle" data-percent="90">
-                            <div></div>
+                            <div></div><span>%</span>
                         </div>
                         <h5>PHOTOSOP</h5>
                         <p>Donec luctus tortor in placerat faucibus</p>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 align progressbar" data-animate="false">
                         <div class="circle" data-percent="80">
-                            <div></div>
+                            <div></div><span>%</span>
                         </div>
                         <h5>HTML</h5>
                         <p>Donec luctus tortor in placerat faucibus</p>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 align progressbar" data-animate="false">
                         <div class="circle" data-percent="70">
-                            <div></div>
+                            <div></div><span>%</span>
                         </div>
                         <h5>PHP</h5>
                         <p>Donec luctus tortor in placerat faucibus</p>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 align progressbar" data-animate="false">
                         <div class="circle" data-percent="90">
-                            <div></div>
+                            <div></div><span>%</span>
                             <h5>WORDPRESS</h5>
                             <p>Donec luctus tortor in placerat faucibus</p>
                         </div>
@@ -971,7 +1004,7 @@
                     <div class="main_div_follow"><div class="hexagon hexagon_follows "><i class="fa fa-facebook" aria-hidden="true"></i></div><p>20000</p></div>
                     <div class="main_div_follow"><div class="hexagon hexagon_follows"><i class="fa fa-twitter" aria-hidden="true"></i></div><p>99900</p></div>
                     <div class="main_div_follow"><div class="hexagon hexagon_follows"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div><p>5000</p></div>
-                    <div class="main_div_follow"><div class="hexagon hexagon_follows"><i class="fa fa-google-plus" aria-hidden="true"></i></div><p>200</p></div>
+                    <div class="main_div_follow"><div class="hexagon hexagon_follows"><img src="images/g+_red.png" alt="g+"><img src="images/g+_white.png" alt="g+" class="hide2"></div><p>200</p></div>
                 </div>
             </div>
         </div>
