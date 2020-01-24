@@ -225,7 +225,7 @@ color: white;
     display: flex;
 }
 
-.show{
+.header .show{
     margin-top: 20px;
 }
 
@@ -496,6 +496,14 @@ color: white;
     justify-content: center;
 }
 
+.portfolioBLock1 div{
+    height: 340px;
+}
+
+.portfolioBLock2 div{
+    height: 340px;
+}
+
 .nav-tabs {
     display: flex;
     justify-content: center;
@@ -671,7 +679,7 @@ h6{
     font-size: 25px;
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 95%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -714,7 +722,7 @@ h6{
 }
 
 .product_p {
-    margin: 3px 12px 0 0;
+    margin: 3px 0 0 0;
     font-size: 19px;
 }
 
@@ -891,7 +899,7 @@ h6{
 
 #carouselExampleIndicators .mini_carousel{
     width: 9%;
-    height: 60px;
+    height: 65px;
     clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
     margin: 10px auto;
 }
@@ -1032,7 +1040,7 @@ h6{
     color: white;
     font-size: 19px;
     position: absolute;
-    top: 50%;
+    top: 95%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
