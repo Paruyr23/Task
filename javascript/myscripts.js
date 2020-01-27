@@ -28,22 +28,35 @@ $(document).ready(function ($) {
 });
 
 
-$(".carousel").swipe({
+// $(".carousel").swipe({
+//
+//     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+//
+//         if (direction == 'left') $(this).carousel('next');
+//         if (direction == 'right') $(this).carousel('prev');
+//
+//     },
+//     allowPageScroll:"vertical"
+//
+// });
+//
+// $('.my-carousel').carousel().swipeCarousel({
+//
+// });
+//
+// $('.my-carousel').carousel().swipeCarousel({
+//     sensitivity:'high'
+// });
 
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+// $('.card-body').on('show.bs.collapse', function () {
+//     $(this).parent('.panel').find('.fa-minus').show();
+//     $(this).parent('.panel').find('.fa-plus').hide();
+// })
+// $('.panel-collapse').on('hide.bs.collapse', function () {
+//     $(this).parent('.panel').find('.fa-minus').hide();
+//     $(this).parent('.panel').find('.fa-plus').show();
+// })
 
-        if (direction == 'left') $(this).carousel('next');
-        if (direction == 'right') $(this).carousel('prev');
-
-    },
-    allowPageScroll:"vertical"
-
-});
-
-$('.my-carousel').carousel().swipeCarousel({
-
-});
-
-$('.my-carousel').carousel().swipeCarousel({
-    sensitivity:'high'
-});
+function myFunction(x) {
+    x.classList.toggle("fa-minus");
+}
