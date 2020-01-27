@@ -680,16 +680,12 @@ h6{
 }
 
 .navbar-toggler{
-    background-color: #9F9F9F;
+    background-color: #343434;
     margin-left: 85%;
 }
 
 .d-block{
     height: -webkit-fill-available;
-}
-
-.inner1 {
-    height: 850px;
 }
 
 .image {
@@ -1388,9 +1384,8 @@ h6{
 .contact{
     background-image: url(../images/bg.png);
     width: 100%;
-    background-position-y: -145px;
     height: 800px;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
