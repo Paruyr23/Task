@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.1/dist/circle-progress.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="javascript/myscripts.js"></script>
-    <script src="javascript/dynamicPortfolio.js"></script>
+    <script src="javascript/dynamicCode.js"></script>§
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="400">
 <header class="container-fluid">
@@ -118,11 +118,7 @@
         </a>
     </section>
     <section class="container-fluid .d-flex .flex-wrap about" id="about">
-        <div class="head">
-            <h2>about <span>creativia</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit
-                dignissim luctus eu in urna. Dapibus egestas turpis.</p>
-        </div>
+        <div id="head1"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-12">
@@ -271,96 +267,15 @@
                         </ul>
                     </nav>
                     <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                        <div class="tab-pane  show active" id="nav-all" role="tabpanel">
-                            <div class="portfolioBLock1">
-                                <div class="portblock bcolor1 ">
-                                    <img src="images/Layer_7.png" alt="1" class="img-fluid">
-                                    <div class="overlay">
-                                        <div class="text">+ web design</div>
-                                    </div>
-                                </div>
-                                <div class="portblock bcolor2">
-                                    <img src="images/Layer_18.png" alt="2" class="img-fluid">
-                                    <div class="overlay">
-                                        <div class="text">+ web design</div>
-                                    </div>
-                                </div>
-                                <div class="portblock bcolor3">
-                                    <img src="images/Layer_9%20(1).png" alt="3" class="img-fluid">
-                                    <div class="overlay">
-                                        <div class="text">+ digital art</div>
-                                    </div>
-                                </div>
-                                <div class="portblock bcolor4">
-                                    <img src="images/Layer_11.png" alt="4" class="img-fluid">
-                                    <div class="overlay">
-                                        <div class="text">+ digital art</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolioBLock2">
-                                <div class="portblock bcolor5">
-                                    <img src="images/Layer_13.png" alt="5" class="img-fluid">
-                                    <div class="overlay">
-                                        <div class="text">+ digital art</div>
-                                    </div>
-                                </div>
-                                <div class="portblock bcolor6">
-                                    <img src="images/Layer_17.png" alt="6" class="img-fluid">
-                                    <div class="overlay">
-                                        <div class="text">+ illustration</div>
-                                    </div>
-                                </div>
-                                <div class="portblock bcolor7">
-                                    <img src="images/Layer_15.png" alt="7" class="img-fluid">
-                                    <div class="overlay">
-                                        <div class="text">+ illustration</div>
-                                    </div>
-                                </div>
-                                <div class="portblock bcolor8">
-                                    <img src="images/Layer_16.png" alt="8" class="img-fluid">
-                                    <div class="overlay">
-                                        <div class="text">+ illustration</div>
-                                    </div>
-                                </div>
-<!--                                col-xl-4 col-lg-4 col-md-4 col-sm-2-->
-                            </div>
-                        </div>
+                        <div class="tab-pane  show active" id="nav-all" role="tabpanel"></div>
                         <div class="tab-pane" id="nav-illustration" role="tabpanel">
-                            <div class="nav-illustration">
-                                <div class="portblock bcolor6">
-                                    <img src="images/Layer_17.png" alt="6" class="img-fluid">
-                                </div>
-                                <div class="portblock bcolor7">
-                                    <img src="images/Layer_15.png" alt="7" class="img-fluid">
-                                </div>
-                                <div class="portblock bcolor8">
-                                    <img src="images/Layer_16.png" alt="8" class="img-fluid">
-                                </div>
-                            </div>
+                            <div class="nav-illustration" id="illustration"></div>
                         </div>
                         <div class="tab-pane" id="nav-digital" role="tabpanel" class="img-fluid">
-                            <div class="nav-digital">
-                                <div class="portblock bcolor5">
-                                    <img src="images/Layer_13.png" alt="5" class="img-fluid">
-                                </div>
-                                <div class="portblock bcolor3">
-                                    <img src="images/Layer_9%20(1).png" alt="3" class="img-fluid">
-                                </div>
-                                <div class="portblock bcolor4">
-                                    <img src="images/Layer_11.png" alt="4" class="img-fluid">
-                                </div>
-                            </div>
+                            <div class="nav-digital" id="digital"></div>
                         </div>
                         <div class="tab-pane" id="nav-web" role="tabpanel">
-                            <div class="nav-web">
-                                <div class="portblock bcolor1">
-                                    <img src="images/Layer_7.png" alt="1" class="img-fluid">
-                                </div>
-                                <div class="portblock bcolor2">
-                                    <img src="images/Layer_18.png" alt="2" class="img-fluid">
-                                </div>
-                            </div>
+                            <div class="nav-web" id="web"></div>
                         </div>
                     </div>
                 </div>
@@ -372,16 +287,7 @@
     </section>
     <section class="features" id="our_product_features">
         <div class="container">
-            <div class="d-flex justify-content-center">
-                <h3>our <span class="red_text"> product features</span></h3>
-            </div>
-            <div class="d-flex justify-content-center font_style">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur <span class="red_text">adipiscing elit.</span> Integer sed
-                    magna vel velit
-                    dignissim luctus eu in urna. Dapibus egestas turpis.
-                </p>
-            </div>
+            <div id="head2"></div>
             <div class="row our_product_features justify-content-center">
                     <div class="col-xl-4 left_checks">
                         <div class="hex_div">
@@ -561,18 +467,7 @@
     </section>
     <section id="our_team">
         <div class="container-fluid team_work">
-            <div class="client_header">
-                <div class="d-flex justify-content-center">
-                    <h3>our <span class="red_text">teamwork</span></h3>
-                </div>
-                <div class="font_style">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur <span class="red_text">adipiscing elit.</span> Integer
-                        sed magna vel velit
-                        dignissim luctus eu in urna. Dapibus egestas turpis.
-                    </p>
-                </div>
-            </div>
+            <div id="head3"></div>
         </div>
         <div class="row team">
             <div class="column nature">
@@ -686,18 +581,7 @@
     </section>
     <section id="our_skills">
         <div class="container-fluid team_work">
-            <div class="client_header">
-                <div class="d-flex justify-content-center">
-                    <h3>our <span class="red_text">Skills</span></h3>
-                </div>
-                <div class="font_style">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur <span class="red_text">adipiscing elit.</span> Integer
-                        sed magna vel velit
-                        dignissim luctus eu in urna. Dapibus egestas turpis.
-                    </p>
-                </div>
-            </div>
+            <div id="head4"></div>
         </div>
         <div class="container-fluid">
             <div class="wrapper">
@@ -858,17 +742,7 @@
     </section>
     <section id="plans_bestseller">
         <div class="container-fluid bestseller">
-            <div class="client_header">
-                <div class="d-flex justify-content-center">
-                    <h3>Plans <span class="red_text">Bestseller</span></h3>
-                </div>
-                <div class="font_style">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur <span class="red_text">adipiscing elit.</span> Integer
-                        sed magna vel velit
-                        dignissim luctus eu in urna. Dapibus egestas turpis.
-                    </p>
-                </div>
+            <div id="head5"></div>
             </div>
             <div class="container">
                 <div class="row">
@@ -956,18 +830,7 @@
     </div>
     <section id="blog">
         <div class="container-fluid our_blog">
-            <div class="client_header">
-                <div class="d-flex justify-content-center">
-                    <h3>our <span class="red_text">Blog</span></h3>
-                </div>
-                <div class="font_style">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur <span class="red_text">adipiscing elit.</span> Integer
-                        sed magna vel velit
-                        dignissim luctus eu in urna. Dapibus egestas turpis.
-                    </p>
-                </div>
-            </div>
+            <div id="head6"></div>
             <div class="bs-example">
                 <div class="card col-md-12 col-lg-12 col-xl-12">
                     <div class="row no-gutters">
@@ -1054,18 +917,7 @@
     </div>
     <section id="form">
         <div class="container-fluid">
-            <div class="client_header">
-                <div class="d-flex justify-content-center">
-                    <h3>Fine us<span class="red_text"> here</span></h3>
-                </div>
-                <div class="font_style">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur <span class="red_text">adipiscing elit.</span> Integer
-                        sed magna vel velit
-                        dignissim luctus eu in urna. Dapibus egestas turpis.
-                    </p>
-                </div>
-            </div>
+            <div id="head7"></div>
         </div>
         <div style="width: 100%; margin-top: 50px;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
