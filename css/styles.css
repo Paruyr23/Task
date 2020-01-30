@@ -160,26 +160,18 @@ html {
     margin-right: 60px;
 }
 
-.navbar-nav li:hover {
-    color: #fff;
-    box-sizing: border-box;
-    height: 40px;
-    border-top: 1.5px solid #FF0036;
-    border-bottom: 1.5px solid #FF0036;
-}
+/*.navbar-nav li:hover {*/
+/*    color: #fff;*/
+/*    box-sizing: border-box;*/
+/*    height: 40px;*/
+/*    border-top: 1.5px solid #FF0036;*/
+/*    border-bottom: 1.5px solid #FF0036;*/
+/*}*/
 
-.navbar-nav li a.active {
-    color: #fff;
-    box-sizing: border-box;
-    height: 40px;
-    border-top: 1.5px solid #FF0036;
-    border-bottom: 1.5px solid #FF0036;
-}
-
-.navbar-nav li a.active:hover {
-    box-sizing: border-box;
-    border:none;
-}
+/*.navbar-nav li a.active:hover {*/
+/*    box-sizing: border-box;*/
+/*    border:none;*/
+/*}*/
 
 
 /*.widget-title{*/
@@ -191,6 +183,30 @@ html {
 /*    border-bottom:2px solid red;*/
 /*}*/
 
+.menu-item-animation {
+    height: 3px;
+    width: 0%;
+    background-color: #ff0036;
+}
+
+.navbar-nav li a.active .menu-item-animation{
+    height: 3px;
+    width: 50%;
+    background-color: #ff0036;
+}
+
+#navbar-collapse .nav-item .nav-link.active .menu-item-animation{
+    width: 50%;
+}
+
+#navbar-collapse .nav-item:hover .menu-item-animation{
+    width: 50%;
+    transition: .2s;
+}
+
+#navbar-collapse .nav-item:hover .nav-link{
+color:white;
+}
 
 .portfolioBLock1{
     display: flex;
@@ -243,7 +259,14 @@ html {
 /*}*/
 
 #navbar-collapse .nav-item a{
-color: white;
+color: #949497;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar {
+    padding: 0 1rem;
 }
 
 .navbar-collapse {
@@ -305,6 +328,22 @@ color: white;
     color:#ff0036;
 }
 
+#head1{
+    margin-bottom: 65px;
+    margin-top: 20px;
+}
+
+#head2{
+    margin-bottom: 15px;
+}
+
+#head5{
+    margin-top: 60px;
+}
+
+#head6{
+    margin-bottom: 60px;
+}
 
 .card-title1 div {
     height: 50px;
@@ -564,6 +603,10 @@ color: white;
     background: #262626;
     width: 100% !important;
     margin-top: 100px;
+}
+
+.portfolio .container-fluid{
+    width: 100%;
 }
 
 .portfolio .container-fluid {
@@ -899,7 +942,7 @@ h6{
     border: 1px solid #D4D4D4;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    margin: 100px 6px 0 0;
+    margin: 80px 6px 0 0;
     width: 366px;
 }
 
@@ -1292,6 +1335,11 @@ h6{
     margin-top: 40px;
 }
 
+#plans_bestseller{
+    margin-bottom: 100px;
+}
+
+
 .bestsellers_header h4 {
     padding: 10px;
     font-family: 'Raleway', sans-serif;
@@ -1340,7 +1388,7 @@ h6{
 }
 
 .bestseller{
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 

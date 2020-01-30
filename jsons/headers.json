@@ -1,67 +1,39 @@
 {
   "headers": [
     {
-      "head": [
-        {
-          "black": "about",
-          "red": "creativia",
-          "red_text": "adipiscing elit."
-        }
-      ]
+      "black": "about",
+      "red": "creativia",
+      "red_text": "adipiscing elit."
     },
     {
-      "head": [
-        {
-          "black": "our",
-          "red": "product features",
-          "red_text": "adipiscing elit."
-        }
-      ]
+      "black": "our",
+      "red": "product features",
+      "red_text": "adipiscing elit."
     },
     {
-      "head": [
-        {
-          "black": "our",
-          "red": "teamwork",
-          "red_text": "adipiscing elit."
-        }
-      ]
+      "black": "our",
+      "red": "teamwork",
+      "red_text": "adipiscing elit."
     },
     {
-      "head": [
-        {
-          "black": "our",
-          "red": "Skills",
-          "red_text": "adipiscing elit."
-        }
-      ]
+      "black": "our",
+      "red": "Skills",
+      "red_text": "adipiscing elit."
     },
     {
-      "head": [
-        {
-          "black": "Plans",
-          "red": "Bestseller",
-          "red_text": "adipiscing elit."
-        }
-      ]
+      "black": "Plans",
+      "red": "Bestseller",
+      "red_text": "adipiscing elit."
     },
     {
-      "head": [
-        {
-          "black": "our",
-          "red": "Blog",
-          "red_text": "adipiscing elit."
-        }
-      ]
+      "black": "our",
+      "red": "Blog",
+      "red_text": "adipiscing elit."
     },
     {
-      "head": [
-        {
-          "black": "Fine us",
-          "red": "here",
-          "red_text": "adipiscing elit."
-        }
-      ]
+      "black": "Fine us",
+      "red": "here",
+      "red_text": "adipiscing elit."
     }
   ]
 }

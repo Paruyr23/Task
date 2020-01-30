@@ -27,7 +27,7 @@ $( document ).ready(function() {
         contentType: "application/json",
         dataType: 'json',
         success: function (data) {
-            const main1 = $('<div/>',{class:'portfolioBLock2'});
+            const main2 = $('<div/>',{class:'portfolioBLock2'});
             for (let i = 0; i < data.portfolioBLock2.length; i++) {
                 const portblocks = $('<div/>',{class:`portblock bcolor${i + 5}`});
                 const img = $('<img>', {src:data.portfolioBLock2[i].src,class:"img-fluid"});
@@ -37,8 +37,8 @@ $( document ).ready(function() {
                 portblocks.append(overplay);
                 text.append(data.portfolioBLock2[i].name);
                 text.appendTo(overplay);
-                main1.append(portblocks);
-                $("#nav-all").append(main1);
+                main2.append(portblocks);
+                $("#nav-all").append(main2);
             }
         }
     });
@@ -63,12 +63,10 @@ $( document ).ready(function() {
 
 const web_design = [
     {
-        "src": "images/Layer_7.png",
-        "name": "+ web design"
+        "src": "images/Layer_7.png"
     },
     {
-        "src": "images/Layer_18.png",
-        "name": "+ web design"
+        "src": "images/Layer_18.png"
     }
 ];
 
@@ -85,16 +83,13 @@ $( document ).ready(function() {
 
 const digital_art = [
     {
-        "src": "images/Layer_9%20(1).png",
-        "name": "+ digital art"
+        "src": "images/Layer_9%20(1).png"
     },
     {
-        "src": "images/Layer_11.png",
-        "name": "+ digital art"
+        "src": "images/Layer_11.png"
     },
     {
-        "src": "images/Layer_13.png",
-        "name": "+ digital art"
+        "src": "images/Layer_13.png"
     }
 ];
 
@@ -116,18 +111,15 @@ $( document ).ready(function() {
         success: function (data) {
             for (let i = 0; i < data.headers.length; i++) {
                 const headersDiv = $('<div/>',{class:`d-flex justify-content-center`});
-                headersDiv.html(`<h3>${data.headers[i].head[0].black}<span class="red_text"> ${data.headers[i].head[0].red}</span></h3>`);
+                headersDiv.html(`<h3>${data.headers[i].black}<span class="red_text"> ${data.headers[i].red}</span></h3>`);
                 const textDiv = $('<div/>',{class:`font_style`});
-                    textDiv.html(`                    
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur <span class="red_text">${data.headers[i].head[0].red_text}</span> Integer
-                        sed magna vel velit
-                        dignissim luctus eu in urna. Dapibus egestas turpis.
-                    </p>`);
-
-                var result = document.getElementById(`head${i + 1}`);
-                result.append(headersDiv);
-                result.append(textDiv);
+                textDiv.html(`<p>
+                                    Lorem ipsum dolor sit amet, consectetur <span class="red_text">${data.headers[i].red_text}</span> Integer
+                                    sed magna vel velit
+                                    dignissim luctus eu in urna. Dapibus egestas turpis.
+                                </p>`);
+                headersDiv.appendTo(document.getElementById(`head${i + 1}`));
+                textDiv.appendTo(document.getElementById(`head${i + 1}`));
             };
         }
     });
