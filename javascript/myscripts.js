@@ -27,36 +27,12 @@ $(document).ready(function ($) {
     $(window).scroll(animateElements);
 });
 
+$(document).ready(function() {
+    $("#carouselExampleIndicators").owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+    });
 
-// $(".carousel").swipe({
-//
-//     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-//
-//         if (direction == 'left') $(this).carousel('next');
-//         if (direction == 'right') $(this).carousel('prev');
-//
-//     },
-//     allowPageScroll:"vertical"
-//
-// });
-//
-// $('.my-carousel').carousel().swipeCarousel({
-//
-// });
-//
-// $('.my-carousel').carousel().swipeCarousel({
-//     sensitivity:'high'
-// });
-
-// $('.card-body').on('show.bs.collapse', function () {
-//     $(this).parent('.panel').find('.fa-minus').show();
-//     $(this).parent('.panel').find('.fa-plus').hide();
-// })
-// $('.panel-collapse').on('hide.bs.collapse', function () {
-//     $(this).parent('.panel').find('.fa-minus').hide();
-//     $(this).parent('.panel').find('.fa-plus').show();
-// })
-
-function myFunction(x) {
-    x.classList.toggle("fa-minus");
-}
+});

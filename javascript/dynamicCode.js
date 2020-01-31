@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     $.ajax({
-        url: 'jsons/row1.json',
+        url: 'jsons/portfolio.json',
         contentType: "application/json",
         dataType: 'json',
         success: function (data) {
@@ -20,7 +20,6 @@ $( document ).ready(function() {
         }
     });
 });
-
 $( document ).ready(function() {
     $.ajax({
         url: 'jsons/row2.json',
@@ -43,65 +42,6 @@ $( document ).ready(function() {
         }
     });
 });
-
-
-$( document ).ready(function() {
-    $.ajax({
-        url: 'jsons/row2.json',
-        contentType: "application/json",
-        dataType: 'json',
-        success: function (data) {
-            for (let i = 0; i < data.portfolioBLock2.length; i++) {
-                const portblocks = $('<div/>',{class:`portblock bcolor${i + 6}`});
-                const img = $('<img>', {src:data.portfolioBLock2[i + 1].src,class:"img-fluid"});
-                portblocks.append(img);
-                $("#illustration").append(portblocks);
-            }
-        }
-    });
-});
-
-const web_design = [
-    {
-        "src": "images/Layer_7.png"
-    },
-    {
-        "src": "images/Layer_18.png"
-    }
-];
-
-$( document ).ready(function() {
-    for (let i = 0; i < web_design.length; i++) {
-        const portblocks = $('<div/>',{class:`portblock bcolor${i + 1}`});
-        const img = $('<img>', {src:web_design[i].src,class:"img-fluid"});
-        portblocks.append(img);
-        $("#web").append(portblocks);
-    }
-});
-
-
-
-const digital_art = [
-    {
-        "src": "images/Layer_9%20(1).png"
-    },
-    {
-        "src": "images/Layer_11.png"
-    },
-    {
-        "src": "images/Layer_13.png"
-    }
-];
-
-$( document ).ready(function() {
-    for (let i = 0; i < digital_art.length; i++) {
-        const portblocks = $('<div/>',{class:`portblock bcolor${i + 3}`});
-        const img = $('<img>', {src:digital_art[i].src,class:"img-fluid"});
-        portblocks.append(img);
-        $("#digital").append(portblocks);
-    }
-});
-
 
 $( document ).ready(function() {
     $.ajax({
