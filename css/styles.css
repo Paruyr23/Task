@@ -619,14 +619,6 @@ header .navbar {
     justify-content: center;
 }
 
-.portfolioBLock1 div{
-    height: 340px;
-}
-
-.portfolioBLock2 div{
-    height: 340px;
-}
-
 .nav-tabs {
     display: flex;
     justify-content: center;
@@ -634,6 +626,7 @@ header .navbar {
 
 .tab-content{
     margin-top: 40px;
+    overflow: hidden;
 }
 h6{
     margin-top: 60px;
@@ -647,8 +640,8 @@ h6{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-   width:25%;
-    height: 300px;
+    width:25%;
+    height: 350px;
     position: relative;
 }
 
@@ -767,7 +760,7 @@ h6{
 }
 
 .d-block{
-    height: -webkit-fill-available;
+    height: 1220px;
 }
 
 .image {
@@ -1474,12 +1467,13 @@ h6{
     background-color: #F2F2F2;
     border-radius: 50%;
     display: inline-block;
+    box-shadow: 0 0px 3px 0px rgba(0,0,0,0.75);
 }
 
 .dot i{
     color:#A2A2A2;
     font-size: 25px;
-    margin: 8px;
+    margin: 7px;
 }
 
 .check_in_circle{
@@ -1493,6 +1487,16 @@ h6{
 
 #blog{
     margin-bottom: 100px;
+}
+
+.buttonsD{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsD button{
+    outline: none;
+    border: none;
 }
 
 .card-img-4{

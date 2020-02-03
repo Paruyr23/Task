@@ -25,6 +25,19 @@ $(document).ready(function ($) {
     }
     animateElements();
     $(window).scroll(animateElements);
-});
 
+
+    if($(".newCard").css('display') === 'none') {
+        $("#show").click(function () {
+            $(".newCard").show(500);
+            $('#show').hide(500);
+            $('#hide').show(500);
+        });
+    }
+    $("#hide").click(function(){
+        $(".newCard").hide(500);
+        $('#hide').hide(500);
+        $('#show').show(500);
+    });
+});
 
