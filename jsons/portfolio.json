@@ -1,7 +1,5 @@
 {
   "portfolio":[
-    {
-      "portfolioBLock1": [
         {
           "src": "images/Layer_7.png",
           "name": "+ web design",
@@ -21,11 +19,7 @@
           "src": "images/Layer_11.png",
           "name": "+ digital art",
           "type": "digital"
-        }
-      ]
-    },
-    {
-      "portfolioBLock2": [
+        },
         {
           "src": "images/Layer_13.png",
           "name": "+ digital art",
@@ -46,7 +40,5 @@
           "name": "+ illustration",
           "type": "illustration"
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -798,7 +798,7 @@ h6{
     font-size: 25px;
     font-weight: bold;
     position: absolute;
-    top: 95%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -1495,6 +1495,22 @@ h6{
     margin-bottom: 100px;
 }
 
+.card-img-4{
+    background-color: #FA8562;
+}
+
+.card-img-5{
+    background-color: #EE5D88;
+}
+
+.card-img-6{
+    background-color: #F39943;
+}
+
+.newCard{
+    display: none;
+}
+
 .contact{
     background-image: url(../images/bg.png);
     width: 100%;
@@ -1524,8 +1540,6 @@ h6{
 .hexagon_follows {
     border-left: solid 1px #ff0036;
     border-right: solid 1px #ff0036;
-    text-align: center;
-    margin: 50px 40px;
 }
 
 .hexagon_follows p{

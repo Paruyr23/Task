@@ -4,46 +4,46 @@ $( document ).ready(function() {
         contentType: "application/json",
         dataType: 'json',
         success: function (data) {
-            const main1 = $('<div/>',{class:'portfolioBLock1'});
-            for (let i = 0; i < data.portfolioBLock1.length; i++) {
-                const portblocks = $('<div/>',{class:`portblock bcolor${i + 1}`});
-                const img = $('<img>', {src:data.portfolioBLock1[i].src,class:"img-fluid"});
+            const main = $('<div/>',{class:'row portfolioBLock'});
+            const mainill = $('<div/>',{class:'nav-illustration'});
+            const maindgd = $('<div/>',{class:'nav-digital'});
+            const mainweb = $('<div/>',{class:'nav-web'});
+            for (let i = 0; i < data.portfolio.length; i++) {
+                const portblocks = $('<div/>',{class:`col-xl-3 col-lg-3 col-md-3 col-sm-6 portblock bcolor${i + 1}`});
+                const img = $('<img>', {src:data.portfolio[i].src,class:"img-fluid"});
                 const overplay = $('<div/>',{class:'overlay'});
                 const text = $('<div/>',{class:'text'});
                 portblocks.append(img);
                 portblocks.append(overplay);
-                text.append(data.portfolioBLock1[i].name);
+                text.append(data.portfolio[i].name);
                 text.appendTo(overplay);
-                main1.append(portblocks);
-                $("#nav-all").append(main1);
-            }
-        }
-    });
-});
-$( document ).ready(function() {
-    $.ajax({
-        url: 'jsons/row2.json',
-        contentType: "application/json",
-        dataType: 'json',
-        success: function (data) {
-            const main2 = $('<div/>',{class:'portfolioBLock2'});
-            for (let i = 0; i < data.portfolioBLock2.length; i++) {
-                const portblocks = $('<div/>',{class:`portblock bcolor${i + 5}`});
-                const img = $('<img>', {src:data.portfolioBLock2[i].src,class:"img-fluid"});
-                const overplay = $('<div/>',{class:'overlay'});
-                const text = $('<div/>',{class:'text'});
-                portblocks.append(img);
-                portblocks.append(overplay);
-                text.append(data.portfolioBLock2[i].name);
-                text.appendTo(overplay);
-                main2.append(portblocks);
-                $("#nav-all").append(main2);
-            }
-        }
-    });
-});
+                main.append(portblocks);
+                $("#nav-all").append(main);
 
-$( document ).ready(function() {
+                if (data.portfolio[i].type === "illustration"){
+                    const portblockill = $('<div/>',{class:`col-xl-3 col-lg-3 col-md-3 col-sm-6 portblock bcolor${i + 1}`});
+                    const imgill = $('<img>', {src:data.portfolio[i].src,class:"img-fluid"});
+                    portblockill.append(imgill);
+                    mainill.append(portblockill);
+                    $("#nav-illustration").append(mainill);
+                }else
+                    if(data.portfolio[i].type === "digital"){
+                    const portblockdgt = $('<div/>',{class:`col-xl-3 col-lg-3 col-md-3 col-sm-6 portblock bcolor${i + 1}`});
+                    const imgdgt = $('<img>', {src:data.portfolio[i].src,class:"img-fluid"});
+                    portblockdgt.append(imgdgt);
+                    maindgd.append(portblockdgt);
+                    $("#nav-digital").append(maindgd);
+                }else{
+                    const portblockweb = $('<div/>',{class:`col-xl-3 col-lg-3 col-md-3 col-sm-6 portblock bcolor${i + 1}`});
+                    const imgweb = $('<img>', {src:data.portfolio[i].src,class:"img-fluid"});
+                    portblockweb.append(imgweb);
+                    mainweb.append(portblockweb);
+                    $("#nav-web").append(mainweb);
+                }
+            }
+        }
+    });
+
     $.ajax({
         url: 'jsons/headers.json',
         contentType: "application/json",
@@ -64,7 +64,6 @@ $( document ).ready(function() {
         }
     });
 });
-
 
 
 
